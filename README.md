@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/METACEO/monorepo-example">
-    <img src="https://raw.githubusercontent.com/METACEO/monorepo-example/master/README-screenshot.png" alt="Monorepo Screenshot" />
+    <img src="https://raw.githubusercontent.com/METACEO/monorepo-example/2816aa8916ede275583eead9bc51c32052bb0a49/README-screenshot.png" alt="Monorepo Screenshot" />
   </a>
 </p>
 
