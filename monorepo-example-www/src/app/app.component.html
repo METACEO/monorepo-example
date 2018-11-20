@@ -1,0 +1,6 @@
+<app-toolbar [session]="appSession$ | async"
+             (onHome)="doHome()"
+             (onSignin)="doSignin()"
+             (onSignout)="doSignout()"></app-toolbar>
+
+<router-outlet></router-outlet>

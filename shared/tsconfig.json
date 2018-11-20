@@ -1,0 +1,25 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "baseUrl": "./",
+      "declaration": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "sourceMap": true,
+      "target": "es5",
+      "lib": [
+        "es2015",
+        "es2016",
+        "es2017",
+        "dom"
+      ]
+    },
+    "files": [
+      "./src/public_api.ts"
+    ]
+  }
+  

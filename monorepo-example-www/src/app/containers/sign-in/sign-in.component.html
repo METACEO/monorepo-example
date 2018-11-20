@@ -1,0 +1,53 @@
+<!--<p>-->
+  <!--sign-in works!-->
+<!--</p>-->
+
+<!--<div>appError$: {{appError$| async | json}}</div>-->
+
+<!--<div>appFeatures$: {{appFeatures$ | async | json}}</div>-->
+
+<!--<div>appInstantiated$: {{appInstantiated$ | async | json}}</div>-->
+
+<!--<div>appSession$: {{appSession$ | async | json}}</div>-->
+
+<div fxFlex
+     fxLayout="row"
+     fxLayoutAlign="center center">
+
+  <div style="width: 400px;">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Sign In</mat-card-title>
+        <mat-card-subtitle>caption</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+
+        <a mat-button
+           [href]="urlSigninGithub">GitHub</a>
+
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput
+                   placeholder="Enter your email"
+                   required
+                   [formControl]="email">
+            <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput
+                   placeholder="Password"
+                   required
+                   [formControl]="password"/>
+            <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "@monorepo-example/shared",
+  "version": "1.0.0",
+  "description": "Shared resources for the monorepo-example project.",
+  "main": "./dist/public_api.js",
+  "types": "./dist/public_api.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rm -fr dist && tsc"
+  },
+  "author": "James Allen",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.116"
+  }
+}
