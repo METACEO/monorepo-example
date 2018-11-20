@@ -25,14 +25,6 @@ export class AppComponent {
     this.appSession$ = this.store.select(fromStore.selectAppSession);
   }
 
-  public doHome(): void {
-    this.store.dispatch(new appActions.UserClickedToolbarToHome());
-  }
-
-  public doSignin(): void {
-    this.store.dispatch(new appActions.UserClickedToolbarToSignin());
-  }
-
   public doSignout(): void {
     this.store.dispatch(new appActions.UserClickedToolbarToSignout());
   }

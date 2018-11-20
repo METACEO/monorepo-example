@@ -1,6 +1,15 @@
-<app-toolbar [session]="appSession$ | async"
-             (onHome)="doHome()"
-             (onSignin)="doSignin()"
-             (onSignout)="doSignout()"></app-toolbar>
+<app-toolbar [session]="appSession$ | async">
+  <ng-container constant>
+    <a mat-button routerLink="/">Home</a>
+  </ng-container>
+  <ng-container guest>
+    <a mat-button routerLink="/sign-up">Sign Up</a>
+    <a mat-button routerLink="/sign-in">Sign In</a>
+  </ng-container>
+  <ng-container user>
+    <a mat-button routerLink="/settings">Settings</a>
+    <button mat-button (click)="doSignout()">Sign Out</button>
+  </ng-container>
+</app-toolbar>
 
 <router-outlet></router-outlet>

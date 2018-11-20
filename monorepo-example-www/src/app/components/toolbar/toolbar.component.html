@@ -3,22 +3,9 @@
        fxLayout="row"
        fxLayoutAlign="space-around center">
     <div>monorepo-example</div>
-    <button mat-button
-            (click)="doHome()">
-      Home
-    </button>
+    <ng-content select="[constant]"></ng-content>
     <div fxFlex></div>
-    <div>
-      <button *ngIf="session !== null"
-              mat-button
-              (click)="doSignout()">
-        Sign Out
-      </button>
-      <button *ngIf="session === null"
-              mat-button
-              (click)="doSignin()">
-        Sign In
-      </button>
-    </div>
+    <ng-content *ngIf="session === null" select="[guest]"></ng-content>
+    <ng-content *ngIf="session !== null" select="[user]"></ng-content>
   </div>
 </mat-toolbar>

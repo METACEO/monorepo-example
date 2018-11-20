@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 import * as containersRoot from './containers';
+import {RouteGuardService} from './services/route-guard.service';
 
 const routes: Routes = [
   {
@@ -12,6 +13,20 @@ const routes: Routes = [
   {
     path: 'sign-in',
     component: containersRoot.SignInComponent,
+    canActivate: [RouteGuardService],
+    data: {
+      allow: RouteGuardService.GUEST,
+      redirect: ['/'],
+    },
+  },
+  {
+    path: 'settings',
+    component: containersRoot.PageNotFoundComponent,
+    canActivate: [RouteGuardService],
+    data: {
+      allow: RouteGuardService.USER,
+      redirect: ['/sign-in'],
+    },
   },
   {
     path: '**',
