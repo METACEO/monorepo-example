@@ -1,5 +1,7 @@
 # monorepo-example
 
+![Monorepo Screenshot](./README-screenshot.png)
+
 ## Build instructions
 
 (Instructions written within a Linux environment!)
