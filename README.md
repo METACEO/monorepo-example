@@ -2,10 +2,9 @@
 
 <p align="center">
   <a href="https://github.com/METACEO/monorepo-example">
-    <img src="https://raw.githubusercontent.com/METACEO/monorepo-example/master/README-screenshot.png" alt="Monorepo Screenshot />
+    <img src="https://raw.githubusercontent.com/METACEO/monorepo-example/master/README-screenshot.png" alt="Monorepo Screenshot" />
   </a>
 </p>
-
 
 ## Build instructions
 
