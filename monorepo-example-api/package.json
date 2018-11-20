@@ -28,6 +28,7 @@
     "async": "^2.6.1",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.11",
     "reflect-metadata": "^0.1.12",

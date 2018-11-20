@@ -313,7 +313,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@monorepo-example/shared@file:../shared":
+"@monorepo-example/shared@../shared":
   version "1.0.0"
   dependencies:
     lodash "^4.17.11"

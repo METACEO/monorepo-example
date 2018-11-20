@@ -2,6 +2,7 @@ import {MiddlewareConsumer, Module} from '@nestjs/common';
 import {ConfigModule} from './config';
 import {StorageModule} from './storage';
 import * as cookieParser from 'cookie-parser';
+require('dotenv').config();
 
 import * as controllersRoot from './controllers';
 import * as middlewaresRoot from './middlewares';
